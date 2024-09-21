@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praghadeesh</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body style="background-color: black;">
+
+
+    <div class="one">
+
+
+
+        <img class="sp" src="C:\Users\welcome\Downloads\malarvizhi\FINAL\2.jpeg">
+
+        <h1 class="name">PRAGHADEESH</h1>
+        <h1 class="intro">A SHOWCASE OF MY EXPERTISE</h1>
+        <h1 class="prof">UI UX DESIGNER</h1>
+        <h1 class="dp"> Creative and detail-oriented UI/UX Designer with expertise in user research, wireframing, prototyping, and visual design. Focused on crafting user-centric designs that align with business goals and enhance user satisfaction. </h1>
+
+    </div>
+    <svg width="100%" height="1000">
+        <path id="flowing-line" 
+              d="M900,350 h 777"
+              fill="transparent" 
+              stroke="white" 
+              stroke-width="1"/>
+    </svg>
+    <div class="two" id="skills-section">
+        <h1 class="skills-title">SKILLS</h1>
+
+        <div class="skills-content">
+            <h2 class="skills-prof">1. UI/UX Designer</h2>
+            <p class="skills-desc">I specialize in creating intuitive and user-centric designs with a focus on wireframing, prototyping, and visual design principles.</p>
+
+            <h2 class="skills-prof">2. Front-End Development</h2>
+            <p class="skills-desc">Proficient in HTML and CSS, I develop responsive and engaging user interfaces that align with modern web standards.</p>
+
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const skillsSection = document.getElementById('skills-section');
+            const skillsTitle = document.querySelector('.skills-title');
+            const skillsContent = document.querySelector('.skills-content');
+            const skillsImages = document.querySelectorAll('.skills-img');
+
+            // Calculate scroll position
+            const scrollPosition = window.scrollY + window.innerHeight;
+
+            // Trigger animations when the section is visible
+            if (scrollPosition > skillsSection.offsetTop + 100) {
+                skillsTitle.classList.add('show');
+                skillsContent.classList.add('show');
+
+                skillsImages.forEach(image => {
+                    image.classList.add('show');
+                });
+            }
+        });
+    </script>
+    <div class="three" id="projects-section">
+        <h1 class="projects-title">MY PROJECTS</h1>
+
+        <!-- Arrow buttons for scrolling -->
+        <button class="scroll-btn left-arrow" onclick="scrollProjects('left')">←</button>
+        <button class="scroll-btn right-arrow" onclick="scrollProjects('right')">→</button>
+
+        <div class="projects-container" id="projects-container">
+            <!-- Project 1 -->
+            <div class="project">
+                <img class="project-img" src="C:\Users\welcome\Desktop\Frame 264.png" alt="Project 1 Image">
+                <h2 class="project-title">1. LUXERA</h2>
+                <p class="project-desc">This project focuses on UI/UX design principles for an e-commerce platform with a clean and intuitive user interface.</p>
+            </div>
+
+            <!--<div class="project">
+                <img class="project-img" src="path/to/project2-image.jpg" alt="Project 2 Image">
+                <h2 class="project-title">Project 2</h2>
+                <p class="project-desc">A mobile application that enhances user experience by providing real-time data visualization using front-end technologies.</p>
+            </div>
+
+            <div class="project">
+                <img class="project-img" src="path/to/project3-image.jpg" alt="Project 3 Image">
+                <h2 class="project-title">Project 3</h2>
+                <p class="project-desc">A dashboard UI built with responsive design in mind, using HTML, CSS, and JavaScript for seamless user interaction.</p>
+            </div>-->
+        </div>
+    </div>
+
+
+    <script>
+        // JavaScript for horizontal scrolling
+        function scrollProjects(direction) {
+            const container = document.getElementById('projects-container');
+            const scrollAmount = window.innerWidth; // Scroll by one full view width (100vw)
+
+            // Calculate the max scrollable width based on number of projects
+            const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+            if (direction === 'left') {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+
+                // Prevent scrolling beyond the left edge
+                if (container.scrollLeft <= 0) {
+                    container.scrollLeft = 0;
+                }
+            } else if (direction === 'right') {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+
+                // Prevent scrolling beyond the right edge
+                if (container.scrollLeft >= maxScrollLeft) {
+                    container.scrollLeft = maxScrollLeft;
+                }
+            }
+        }
+
+        // Scroll-triggered animation for the Projects section
+        window.addEventListener('scroll', function() {
+            const projectsSection = document.getElementById('projects-section');
+            const projectsTitle = document.querySelector('.projects-title');
+            const projects = document.querySelectorAll('.project');
+
+            // Calculate scroll position
+            const scrollPosition = window.scrollY + window.innerHeight;
+
+            // Trigger animations when the section is visible
+            if (scrollPosition > projectsSection.offsetTop + 100) {
+                projectsTitle.classList.add('show');
+
+                projects.forEach((project, index) => {
+                    setTimeout(() => {
+                        project.classList.add('show');
+                    }, index * 300); // Stagger animation for each project
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
