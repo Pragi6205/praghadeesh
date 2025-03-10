@@ -437,57 +437,54 @@ img {
         <script src="https://code.jquery.com/jquery-3.7.1.min.js " integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin=" anonymous "></script>
 
         <script>
-            $(document).ready(function() {
+    $(document).ready(function() {
                 const data = [{
-                    image: "Group 1597882892.png ",
-                    title: "LUXERA - AN E-COMMERCE WEBSITE ",
-                    content: "Designed and developed an intuitive e-commerce platform with a seamless user experience, modern UI, and responsive design. Focused on enhancing user engagement through aesthetic layouts, smooth navigation, and optimizedproduct displays.",
-                    link: "https://luxera.netlify.app/ ",
-
+                    image: "C:\\Users\\welcome\\Desktop\\Group 1597882892.png",
+                    title: "LUXERA - AN E-COMMERCE WEBSITE",
+                    content: "Designed and developed an intuitive e-commerce platform with a seamless user experience, modern UI, and responsive design. Focused on enhancing user engagement through aesthetic layouts, smooth navigation, and optimized product displays.",
+                    link: "https://luxera.netlify.app/",
 
                 }, {
-                    image: "Group 1171275409.png ",
-                    title: "CALMCAMPUS ",
+                    image: "C:\\Users\\welcome\\Desktop\\Group 1171275409.png",
+                    title: "CALMCAMPUS",
                     content: "Designed a student-focused mental wellness application with a soothing UI, engaging user experience, and seamless navigation. Integrated features to track mental well-being, provide relaxation exercises, and offer guide support for stress management.",
-                    link: kajhfdsk
+                    link: "kajhfdsk"
                 }, {
-                    image: "Desktop - 37.png ",
-                    title: "WILDLENS ",
+                    image: "C:\\Users\\welcome\\Desktop\\Desktop - 37.png",
+                    title: "WILDLENS",
                     content: "Designed an immersive travel and tourism guide with an intuitive interface, interactive maps, and personalized travel recommendations. Focused on enhancing user exploration through dynamic UI elements and smooth navigation to provide an engaging experience.",
-                    link: "none "
+                    link: "none"
                 }];
 
                 var index = 0;
 
                 function updateContent() {
-                    let img = $("#prj-img ");
-                    let title = $("#prj-title ");
-                    let content = $("#prj-content ");
-                    let link = $("#prj-link ");
+                    let img = $("#prj-img");
+                    let title = $("#prj-title");
+                    let content = $("#prj-content");
+                    let link = $("#prj-link");
 
-                    $(".border-six ").fadeOut(250, function() {
-                        img.attr("src ", data[index].image);
+                    $(".border-six").fadeOut(250, function() {
+                        img.attr("src", data[index].image);
                         title.html(data[index].title);
                         content.html(data[index].content);
-                        link.attr("href ", data[index].link);
+                        link.attr("href", data[index].link);
                         link.html(data[index].link);
-                        $(".border-six ").fadeIn(250);
+                        $(".border-six").fadeIn(250);
                     });
                 }
 
-                $("#nextBtn ").on("click ", function() {
-                    index = (index + 1) % data.length;
+                $("#nextBtn").on("click", function() {
+                    index = (index + 1) % data.length; // Ensures looping back
                     console.log(index);
                     updateContent();
                 });
 
-                $("#prevBtn ").on("click ", function() {
-                    index = (index - 1) % data.length;
+                $("#prevBtn").on("click", function() {
+                    index = (index - 1 + data.length) % data.length; // Ensures looping in reverse
                     console.log(index);
                     updateContent();
                 });
-
-
 
                 updateContent();
             });
