@@ -4,149 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praghadeesh</title>
-    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+
+
+
 </head>
 
-<body style="background-color: black;">
+<body>
+    <div>
+        <div class="image">
+            <div style="text-align: center; padding: -200px;">
+
+                <button class="home" onclick="window.location.href='#tree'">ABOUT</button>
+                <button class="home" onclick="window.location.href='#exp'">EXPERIENCE</button>
+                <button class="home" onclick="window.location.href='#for'">SKILLS</button>
+                <button class="home" onclick="window.location.href='#ix'">PROJECTS</button>
+                <button class="home" onclick="window.location.href='#sev'">CONTACT</button>
+            </div>
+            <div class="fff">
+                <img src="C:\Users\welcome\Desktop\img1.png" alt="">
+                <div class="creative" style="margin-top: 100px;">
+                    <p style="margin-left: -30px;"><span class="create">CREATIVITY</span> FUELS</p>
+                    <p style="margin-left: -300px;">INNOVATION, </p>
+                    <p style="margin-left: -20px;">DESIGN SHAPES IT.</p>
 
 
-    <div class="one">
-
-
-
-        <img class="sp" src="C:\Users\welcome\Downloads\malarvizhi\FINAL\2.jpeg">
-
-        <h1 class="name">PRAGHADEESH</h1>
-        <h1 class="intro">A SHOWCASE OF MY EXPERTISE</h1>
-        <h1 class="prof">UI UX DESIGNER</h1>
-        <h1 class="dp"> Creative and detail-oriented UI/UX Designer with expertise in user research, wireframing, prototyping, and visual design. Focused on crafting user-centric designs that align with business goals and enhance user satisfaction. </h1>
-
-    </div>
-    <svg width="100%" height="1000">
-        <path id="flowing-line" 
-              d="M900,350 h 777"
-              fill="transparent" 
-              stroke="white" 
-              stroke-width="1"/>
-    </svg>
-    <div class="two" id="skills-section">
-        <h1 class="skills-title">SKILLS</h1>
-
-        <div class="skills-content">
-            <h2 class="skills-prof">1. UI/UX Designer</h2>
-            <p class="skills-desc">I specialize in creating intuitive and user-centric designs with a focus on wireframing, prototyping, and visual design principles.</p>
-
-            <h2 class="skills-prof">2. Front-End Development</h2>
-            <p class="skills-desc">Proficient in HTML and CSS, I develop responsive and engaging user interfaces that align with modern web standards.</p>
-
-        </div>
-    </div>
-    <script>
-        window.addEventListener('scroll', function() {
-            const skillsSection = document.getElementById('skills-section');
-            const skillsTitle = document.querySelector('.skills-title');
-            const skillsContent = document.querySelector('.skills-content');
-            const skillsImages = document.querySelectorAll('.skills-img');
-
-            // Calculate scroll position
-            const scrollPosition = window.scrollY + window.innerHeight;
-
-            // Trigger animations when the section is visible
-            if (scrollPosition > skillsSection.offsetTop + 100) {
-                skillsTitle.classList.add('show');
-                skillsContent.classList.add('show');
-
-                skillsImages.forEach(image => {
-                    image.classList.add('show');
-                });
-            }
-        });
-    </script>
-    <div class="three" id="projects-section">
-        <h1 class="projects-title">MY PROJECTS</h1>
-
-        <!-- Arrow buttons for scrolling -->
-        <button class="scroll-btn left-arrow" onclick="scrollProjects('left')">←</button>
-        <button class="scroll-btn right-arrow" onclick="scrollProjects('right')">→</button>
-
-        <div class="projects-container" id="projects-container">
-            <!-- Project 1 -->
-            <div class="project">
-                <img class="project-img" src="C:\Users\welcome\Desktop\Frame 264.png" alt="Project 1 Image">
-                <h2 class="project-title">1. LUXERA</h2>
-                <p class="project-desc">This project focuses on UI/UX design principles for an e-commerce platform with a clean and intuitive user interface.</p>
+                    <div class="line">
+                        <p class="name" style="font-size: 40px; font-weight: 300">I'm <span style="font-size: 55px; color: #848684; font-weight: 700;">PRAGHADEESH</span> And I'm Here </p>
+                        <p class="name" style="margin-top: 70px; margin-left: -700px; font-size: 38px; font-weight: 300;">To Make It.</p>
+                    </div>
+                </div>
             </div>
 
-            <!--<div class="project">
-                <img class="project-img" src="path/to/project2-image.jpg" alt="Project 2 Image">
-                <h2 class="project-title">Project 2</h2>
-                <p class="project-desc">A mobile application that enhances user experience by providing real-time data visualization using front-end technologies.</p>
+        </div>
+        <div style="display: flex;">
+            <div class="two" id="tree">
+                <h1 class="show">THE SHOWCASE OF MY EXPERTISE</h1>
+
+            </div>
+            <div class="with-div">
+                <h4 class="with">With expertise in UI/UX design and proficiency in tools like, I am confident in my ability to contribute to your expectations. I specialize in creating intuitive designs for web and mobile, ensuring a seamless user experience. My skills
+                    in HTML and CSS align with your mission to make the smooth user experience to all.</h4>
+
+            </div>
+        </div>
+
+        <div class="three">
+            <h1 class="me">ABOUT ME</h1>
+            <h3 class="title">MY DESIGN PHILOSOPHY</h3>
+            <p class="content">I approach every project with a deep understanding of user needs and design with an emphasis on simplicity and elegance. My work showcases this in every aspect, from smooth animations to carefully selected color palettes. I love playing with
+                contrasts, especially dark themes, to enhance user experience while keeping things visually appealing.</p>
+            <h3 class="title">WHAT DRIVES ME</h3>
+            <p class="content">I am always eager to learn and grow, constantly keeping up with the latest design trends and technologies. My curiosity pushes me to experiment and explore new ideas, ensuring that I stay ahead in this fast-evolving field.</p>
+            <h3 class="title">PASSIONATE UI/UX DESIGNER</h3>
+            <p class="content">I’m Praghadeesh, a UI/UX designer with a flair for building intuitive, user-centered digital interfaces. With a strong background in front-end technologies like HTML and CSS, I bring a blend of aesthetics and functionality to every project.
+                My approach combines creative design principles with technical precision to create elegant, responsive websites and apps.</p>
+        </div>
+        <div id="for" style="margin-top: 3rem;">
+            <h1 class="me" style="margin-top: 2px;">SKILLS</h1>
+            <div class="four">
+                <div class="ui">
+                    <div>
+                        <h3 class="title" style="padding-left: 7rem; font-size: 2.7rem;">UI/UX DESIGN</h3>
+
+                        <div style="display: flex; gap: 3rem; align-items: center; width: 50rem;">
+                            <h2>01</h2>
+                            <div style="width:71.5%; gap: 0.1rem;">
+                                <h3 class="title" style="font-size: 1.5rem; letter-spacing: 0.1rem;">USER RESEARCH & PERSONAS</h3>
+                                <p class="content" style="font-size: 1.2rem; ">In-depth research to understand user needs and behaviors, creating personas that inform design decisions.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 3rem; align-items: center; width: 50rem;">
+                            <h2>02</h2>
+                            <div style="width:71.5%;">
+                                <h3 class="title" style="font-size: 1.5rem; letter-spacing: 0.1rem;">WIREFRAMING & PROTOTYPING:</h3>
+                                <p class="content" style="font-size: 1.2rem; ">Crafting detailed wireframes and interactive prototypes to visualize user flows and interface structure.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 3rem; align-items: center; width: 50rem;">
+                            <h2>03</h2>
+                            <div style="width:71.5%;">
+                                <h3 class="title" style="font-size: 1.5rem; letter-spacing: 0.1rem;">RESPONSIVE DESIGN</h3>
+                                <p class="content" style="font-size: 1.2rem; ">Ensuring smooth experiences across all devices, from desktop to mobile.</p>
+                            </div>
+
+                        </div>
+                        <img src="C:\Users\welcome\Desktop\teenyicons_code-solid.png" style="height: 25rem; width: auto; margin-left: 10rem; opacity: 30%;">
+                    </div>
+                </div>
+                <div class="ui">
+                    <div style="margin-left: 55rem; margin-top: -60rem;">
+                        <img src="C:\Users\welcome\Desktop\Vector.png" style="height: 17rem; width: auto; margin-left: 10rem; opacity: 30%;">
+                        <h3 class="title" style="padding-left: 7rem; font-size: 2.7rem; display: inline-flex;">FRONT-END DEVELOPMENT</h3>
+
+                        <div style="display: flex; gap: 3rem; align-items: center; width: 50rem;">
+                            <h2>01</h2>
+                            <div style="width:71.5%; gap: 0.1rem;">
+                                <h3 class="title" style="font-size: 1.5rem; letter-spacing: 0.1rem;">HTML5 & CSS3</h3>
+                                <p class="content" style="font-size: 1.2rem; ">In-depth research to understand user needs and behaviors, creating personas that inform design decisions.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 3rem; align-items: center; width: 50rem;">
+                            <h2>02</h2>
+                            <div style="width:71.5%;">
+                                <h3 class="title" style="font-size: 1.5rem; letter-spacing: 0.1rem;">RESPONSIVE LAYOUT</h3>
+                                <p class="content" style="font-size: 1.2rem; ">Crafting detailed wireframes and interactive prototypes to visualize user flows and interface structure.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 3rem; align-items: center; width: 50rem;">
+                            <h2>03</h2>
+                            <div style="width:71.5%;">
+                                <h3 class="title" style="font-size: 1.5rem; letter-spacing: 0.1rem;">ANIMATIONS</h3>
+                                <p class="content" style="font-size: 1.2rem; ">Ensuring smooth experiences across all devices, from desktop to mobile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="project">
-                <img class="project-img" src="path/to/project3-image.jpg" alt="Project 3 Image">
-                <h2 class="project-title">Project 3</h2>
-                <p class="project-desc">A dashboard UI built with responsive design in mind, using HTML, CSS, and JavaScript for seamless user interaction.</p>
-            </div>-->
+
+
+
         </div>
-    </div>
+        <div class="five" id="exp" style="width: 1200px; margin-left: 350px; margin-top: 200px;">
+            <h1 class="me">EXPERIENCE</h1>
+            <h3 class="title" style="font-size: 1.7rem; letter-spacing: 0.1rem;">JARURAT CARE FOUNDATION - UX RESEARCH & AUDIT</h3>
+            <p class="content" style="font-size: 1.4rem; font-weight: 50 ">Conducted a UX audit and competitive analysis for the Jarurat Care Foundation’s digital platform. Identified usability issues, proposed design improvements, and enhanced accessibility to improve the overall user experience for their target
+                audience.
+            </p>
+
+            <h3 class="title" style="font-size: 1.7rem; letter-spacing: 0.1rem;">CALM CAMPUS - UI/UX DESIGNER</h3>
+            <p class="content" style="font-size: 1.4rem; font-weight: 50;  ">Designed the UI and user experience for CalmCampus, a mental wellness platform for students. Focused on creating an intuitive, aesthetically soothing interface, ensuring seamless navigation, and implementing engaging, user-friendly interactions
+                for stress management and mental well-being.
+            </p>
 
 
-    <script>
-        // JavaScript for horizontal scrolling
-        function scrollProjects(direction) {
-            const container = document.getElementById('projects-container');
-            const scrollAmount = window.innerWidth; // Scroll by one full view width (100vw)
+        </div>
+        <div class="six" id="ix" style="height: 570px;">
+            <h1 class="me">PROJECTS</h1>
+            <div class="carousel-container">
 
-            // Calculate the max scrollable width based on number of projects
-            const maxScrollLeft = container.scrollWidth - container.clientWidth;
+                <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
 
-            if (direction === 'left') {
-                container.scrollBy({
-                    left: -scrollAmount,
-                    behavior: 'smooth'
-                });
+                <div class="carousel-wrapper">
 
-                // Prevent scrolling beyond the left edge
-                if (container.scrollLeft <= 0) {
-                    container.scrollLeft = 0;
+                    <div class="border-six">
+                        <div class="content-wrapper">
+                            <img src="C:\Users\welcome\Desktop\Group 1597882892.png" id="prj-img">
+                            <div>
+                                <h3 class="title" id="prj-title">LUXERA - AN E-COMMERCE WEBSITE</h3>
+                                <p class="content" id="prj-content">
+                                    Designed and developed an intuitive e-commerce platform with a seamless user experience, modern UI, and responsive design. Focused on enhancing user engagement through aesthetic layouts, smooth navigation, and optimized product displays.
+                                </p>
+                                <h3 class="title">LINK: <a href="https://luxera.netlify.app/" id="prj-link">https://luxera.netlify.app/</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+
+
+
+            </div>
+
+            <div>
+                <h1 class="me" style="letter-spacing: 2px; font-size: large; margin-top: 30px;"> All Projects Link: <a href="https://www.figma.com/design/NZBn5TDrUuVR34CGBagP05/Projects?node-id=597-990&t=EKmrjiUJVomqlLGu-1" style="font-size: large;">https://www.figma.com/design/NZBn5TDrUuVR34CGBagP05/Projects?node-id=597-990&t=EKmrjiUJVomqlLGu-1</a></h1>
+
+            </div>
+
+            <div id="sev" style="height: 400px; margin-top: 300px; background-color: #848684; padding-top: 50px; ">
+                <h1 class="me" style="color: black;">CONTACT</h1>
+                <div class="seven" style="margin-left: 600px;">
+                    <h3 class="title " style="color: black; ">E-Mail ID:
+                        <a href="praghadeesh6205@gmail.com ">praghadeesh6205@gmail.com</a>
+                    </h3>
+                    <h3 class="title " style="color: black; ">Mobile:
+                        <a href="6369933795 "></a>+91 6369933795</h3>
+                    <h3 class="title " style="color: black; ">Linked In:
+                        <a href="https://www.linkedin.com/in/praghadeesh-s-a00910293 ">praghadeesh</a>
+                    </h3>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js " integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin=" anonymous "></script>
+
+        <script>
+            $(document).ready(function() {
+                const data = [{
+                    image: "C:\\Users\\welcome\\Desktop\\Group 1597882892.png ",
+                    title: "LUXERA - AN E-COMMERCE WEBSITE ",
+                    content: "Designed and developed an intuitive e-commerce platform with a seamless user experience, modern UI, and responsive design. Focused on enhancing user engagement through aesthetic layouts, smooth navigation, and optimizedproduct displays.",
+                    link: "https://luxera.netlify.app/ ",
+
+
+                }, {
+                    image: "C:\\Users\\welcome\\Desktop\\Group 1171275409.png ",
+                    title: "CALMCAMPUS ",
+                    content: "Designed a student-focused mental wellness application with a soothing UI, engaging user experience, and seamless navigation. Integrated features to track mental well-being, provide relaxation exercises, and offer guide support for stress management.",
+                    link: kajhfdsk
+                }, {
+                    image: "C:\\Users\\welcome\\Desktop\\Desktop - 37.png ",
+                    title: "WILDLENS ",
+                    content: "Designed an immersive travel and tourism guide with an intuitive interface, interactive maps, and personalized travel recommendations. Focused on enhancing user exploration through dynamic UI elements and smooth navigation to provide an engaging experience.",
+                    link: "none "
+                }];
+
+                var index = 0;
+
+                function updateContent() {
+                    let img = $("#prj-img ");
+                    let title = $("#prj-title ");
+                    let content = $("#prj-content ");
+                    let link = $("#prj-link ");
+
+                    $(".border-six ").fadeOut(250, function() {
+                        img.attr("src ", data[index].image);
+                        title.html(data[index].title);
+                        content.html(data[index].content);
+                        link.attr("href ", data[index].link);
+                        link.html(data[index].link);
+                        $(".border-six ").fadeIn(250);
+                    });
                 }
-            } else if (direction === 'right') {
-                container.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
+
+                $("#nextBtn ").on("click ", function() {
+                    index = (index + 1) % data.length;
+                    console.log(index);
+                    updateContent();
                 });
 
-                // Prevent scrolling beyond the right edge
-                if (container.scrollLeft >= maxScrollLeft) {
-                    container.scrollLeft = maxScrollLeft;
-                }
-            }
-        }
-
-        // Scroll-triggered animation for the Projects section
-        window.addEventListener('scroll', function() {
-            const projectsSection = document.getElementById('projects-section');
-            const projectsTitle = document.querySelector('.projects-title');
-            const projects = document.querySelectorAll('.project');
-
-            // Calculate scroll position
-            const scrollPosition = window.scrollY + window.innerHeight;
-
-            // Trigger animations when the section is visible
-            if (scrollPosition > projectsSection.offsetTop + 100) {
-                projectsTitle.classList.add('show');
-
-                projects.forEach((project, index) => {
-                    setTimeout(() => {
-                        project.classList.add('show');
-                    }, index * 300); // Stagger animation for each project
+                $("#prevBtn ").on("click ", function() {
+                    index = (index - 1) % data.length;
+                    console.log(index);
+                    updateContent();
                 });
-            }
-        });
-    </script>
 
+
+
+                updateContent();
+            });
+        </script>
 </body>
 
 </html>
